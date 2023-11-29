@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.gif") ;
+    background-size: cover;
+}
+
+header {
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    align-items: center;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    gap:10px;
+    margin:20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pulsador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    grid-template-rows:repeat(2,200px);
+    gap:10px;
+    margin:20px;
+}
+
+.pulsador div {
+    width: 200px;
+    height: 200px;
+    margin: 1px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Agrega una transición suave a todos los bloques */
+}
+
+.pulsador div:hover {
+    transform: scale(1.05); /* Hace el bloque un poco más grande al pasar el ratón por encima */
+}
+
+.pulsador div:active {
+    transform: scale(0.98); /* Hace el bloque más pequeño al hacer clic */
+  background-color:white;
+  
+}
+
+/* Estilos específicos de color para cada bloque */
+.rojo {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.azul {
+    background-color: blue;
+}
+.menu{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    height: 100px;
+}
+.button
+{
+    display: grid;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active
+{
+  background-color: white;
+}
+footer{
+    background-color: skyblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    width:100%;
+}
+.instrucciones
+{
+    background-color: skyblue;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    width:100%;
+    padding: 70px;
+}
+.logo {
+    background-image: url("logo.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
